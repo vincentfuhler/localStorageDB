@@ -24,6 +24,8 @@ describe("localStorageDB", function() {
     	// insert a row
     	db.insert("test_table", insertRow);
     	db.commit();
+    	
+    	
 
     	var queryResult = db.query('test_table', {year: cur});
 
